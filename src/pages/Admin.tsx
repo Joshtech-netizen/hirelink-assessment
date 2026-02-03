@@ -11,7 +11,7 @@ export const Admin = () => {
   return (
     <div className="flex gap-4 p-6 bg-slate-50 min-h-screen overflow-x-auto">
       {STAGES.map(stage => (
-        <div key={stage} className="min-w-[280px] bg-slate-200/50 p-4 rounded-xl">
+        <div key={stage} className="min-w-70 bg-slate-200/50 p-4 rounded-xl">
           <h3 className="font-bold text-slate-500 mb-4 px-2">{stage}</h3>
           <div className="space-y-3">
             {candidates.filter(candidate => candidate.stage === stage).map(candidate => (
