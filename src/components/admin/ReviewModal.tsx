@@ -1,5 +1,5 @@
 import type { Candidate } from '../../types';
-import { Button } from '../shared/button';
+import { Button } from '../shared/Button';
 
 interface Props {
   candidate: Candidate;
