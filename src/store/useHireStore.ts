@@ -1,7 +1,6 @@
-// src/store/useHireStore.ts
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { Candidate } from '../types';
+import type { Candidate } from '../types/types';
 
 interface HireState {
   candidates: Candidate[];
