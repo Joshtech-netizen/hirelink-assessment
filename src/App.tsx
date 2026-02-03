@@ -4,15 +4,12 @@ import { Apply } from './pages/Apply';
 import { ThankYou } from './pages/ThankYou';
 import { Admin } from './pages/Admin';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
-      <nav className="bg-slate-900 text-white p-4 flex justify-between items-center shadow-lg">
-        <Link to="/" className="text-2xl font-black tracking-tighter">HIRELINK</Link>
-        <div className="space-x-6">
-          <Link to="/" className="hover:text-blue-400">Careers</Link>
-          <Link to="/admin" className="bg-blue-600 px-4 py-2 rounded-lg font-bold hover:bg-blue-700">Recruiter Login</Link>
-        </div>
+      <nav className="p-4 bg-slate-900 text-white flex justify-between items-center">
+        <Link to="/" className="text-xl font-black">HIRELINK</Link>
+        <Link to="/admin" className="text-sm font-bold opacity-70 hover:opacity-100">Recruiter Portal</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,4 +20,3 @@ function App() {
     </BrowserRouter>
   );
 }
-export default App;
