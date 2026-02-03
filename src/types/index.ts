@@ -26,4 +26,10 @@ export interface Job {
 export const MOCK_JOBS: Job[] = [
   { id: '1', title: 'Frontend Engineer', location: 'Remote', description: 'Build modern UIs with React and TypeScript.' },
   { id: '2', title: 'Full Stack Developer', location: 'Accra, GH', description: 'Work on enterprise PHP and React applications.' },
+  { 
+    id: '3', 
+    title: 'UI/UX Designer', 
+    location: 'Accra, GH', 
+    description: 'Design beautiful user experiences for the Digicoast fellowship.' 
+  }
 ];
