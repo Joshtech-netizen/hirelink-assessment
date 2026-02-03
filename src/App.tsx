@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Apply } from './pages/Apply';
+import { ThankYou } from './pages/ThankYou';
+import { Admin } from './pages/Admin';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <BrowserRouter>
+      <nav className="bg-slate-900 text-white p-4 flex justify-between items-center shadow-lg">
+        <Link to="/" className="text-2xl font-black tracking-tighter">HIRELINK</Link>
+        <div className="space-x-6">
+          <Link to="/" className="hover:text-blue-400">Careers</Link>
+          <Link to="/admin" className="bg-blue-600 px-4 py-2 rounded-lg font-bold hover:bg-blue-700">Recruiter Login</Link>
+        </div>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/apply/:jobId" element={<Apply />} />
+        <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App
+export default App;
