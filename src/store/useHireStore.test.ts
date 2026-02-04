@@ -9,6 +9,7 @@ beforeEach(() => {
 test('should add a new candidate to the store', () => {
   const { addCandidate } = useHireStore.getState();
   
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mockCandidate: any = { id: 'HL-1', fullName: 'Joshua', stage: 'Applied' };
   addCandidate(mockCandidate);
   
