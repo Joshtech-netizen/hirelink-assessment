@@ -65,3 +65,7 @@ To meet the persistence requirement, I implemented Zustand's persist middleware.
 - **Routing:** React Router DOM
 
 - **Styling:** Tailwind CSS
+
+## 3\. TESTING
+
+- **Testing Suite:** Integrated Vitest for unit testing core business logic, including unique ID generation and global state transitions, ensuring high code reliability.
