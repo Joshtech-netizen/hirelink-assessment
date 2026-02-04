@@ -31,5 +31,17 @@ export const MOCK_JOBS: Job[] = [
     title: 'UI/UX Designer', 
     location: 'Accra, GH', 
     description: 'Design beautiful user experiences for the Digicoast fellowship.' 
+  },
+  { 
+    id: '4', 
+    title: 'Cybersecurity Analyst', 
+    location: 'Remote', 
+    description: 'Analyze system vulnerabilities and implement security protocols for contemporary enterprise IT environments.' 
+  },
+  { 
+    id: '5', 
+    title: 'Digital Media Specialist', 
+    location: 'Accra, GH', 
+    description: 'Oversee live streaming operations and high-end video production workflows for institutional events.' 
   }
 ];
